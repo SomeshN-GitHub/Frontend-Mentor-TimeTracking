@@ -173,7 +173,7 @@ p {
   margin-left: 20px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 455px) {
   .container {
     width: 95%;
     display: grid;
