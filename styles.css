@@ -1,0 +1,232 @@
+:root {
+  --Very_dark_blue: hsl(226, 43%, 10%);
+  --Dark_blue: hsl(235, 46%, 20%);
+  --Desaturated_blue: hsl(235, 45%, 61%);
+  --Pale_Blue: hsl(236, 100%, 87%);
+
+  --Blue: hsl(246, 80%, 60%);
+  --Light_red1: hsl(15, 100%, 70%);
+  --Soft_blue: hsl(195, 74%, 62%);
+  --Light_red: hsl(348, 100%, 68%);
+  --Lime_green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft_orange: hsl(43, 84%, 65%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--Very_dark_blue);
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+h4 > span {
+  font-size: x-large;
+  float: right;
+  margin-right: 25px;
+}
+.container {
+  width: 70vw;
+  height: 60vh;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.profileCardContainer {
+  grid-row: 1/3;
+  position: relative;
+  /* border: 2px solid white; */
+  border-radius: 15px;
+  width: 200px;
+  background-color: var(--Dark_blue);
+}
+.profileCardContainer a {
+  display: block;
+  text-decoration: none;
+  color: var(--Desaturated_blue);
+  margin: 20px 25px;
+}
+.profileCardContainer a:hover {
+  color: white;
+  transform: scale(1.01);
+  transition: 500ms;
+}
+.profileCardContainer a:active:visited {
+  color: white;
+}
+.profileCard {
+  height: 273px;
+  width: 200px;
+  border-radius: 15px;
+  position: relative;
+  /* border: 2px solid white; */
+  background-color: var(--Blue);
+}
+
+.profileCard img {
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 17px;
+}
+.profileCard h2 {
+  margin-left: 17px;
+}
+
+.cardContainer {
+  /* border: 2px solid white; */
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.frontCard {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  /* border: 2px solid white; */
+  background-color: var(--Dark_blue);
+}
+
+.frontCard:hover {
+  background-color: var(--Desaturated_blue);
+  transition: 300ms;
+}
+
+.selfCare {
+  background: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Soft_orange);
+}
+.selfCare img {
+  width: 20px;
+}
+
+.social {
+  background: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Violet);
+}
+.social img {
+  width: 20px;
+}
+
+.exercise {
+  background: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Lime_green);
+}
+.exercise img {
+  width: 20px;
+}
+
+.study {
+  background: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Light_red);
+}
+.study img {
+  width: 20px;
+}
+
+.play {
+  background: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Soft_blue);
+}
+.play img {
+  width: 20px;
+}
+
+.work {
+  background: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position-x: 140px;
+  background-size: 50px;
+  background-color: var(--Light_red1);
+}
+.work img {
+  width: 20px;
+}
+
+h4,
+h1,
+p {
+  margin-left: 20px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 95%;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .profileCardContainer {
+    width: 95%;
+    height: 200px;
+    grid-row: 1/2;
+    margin-left: 8px;
+  }
+  .profileCardContainer a {
+    position: relative;
+    margin-top: 170px;
+    display: inline-block;
+    margin-left: 35px;
+  }
+  .profileCardContainer a:hover {
+    color: white;
+  }
+  .profileCard {
+    position: absolute;
+    margin: 0px auto 20%;
+    width: 100%;
+    height: 80%;
+  }
+  .profileCard img {
+    float: left;
+  }
+  .profileCard h1 {
+    font-size: 25px;
+  }
+  .cardContainer {
+    width: 95%;
+    height: 160px;
+    margin: 10px 8px;
+    background-repeat: no-repeat;
+    background-position-x: 280px;
+    background-position-y: -9px;
+    background-size: 60px;
+  }
+  .cardContainer p {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+  }
+  .cardContainer h1 {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  .frontCard {
+    height: 80%;
+  }
+}
