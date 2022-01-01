@@ -56,7 +56,7 @@ h4 > span {
   transform: scale(1.01);
   transition: 500ms;
 }
-.profileCardContainer a:active:visited {
+.profileCardContainer a:focus {
   color: white;
 }
 .profileCard {
